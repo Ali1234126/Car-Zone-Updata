@@ -1,10 +1,10 @@
 import React from "react";
 
-const Cart = ({ cart }) => {
+const Cart = ({  }) => {
   return (
     <div>
       <h1>Your Cart</h1>
-      {cart.length === 0 ? (
+      {/* {cart.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
         <div className="cart-items">
@@ -16,7 +16,7 @@ const Cart = ({ cart }) => {
             </div>
           ))}
         </div>
-      )}
+      )} */}
     </div>
   );
 };
