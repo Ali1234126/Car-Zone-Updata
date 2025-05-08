@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "name": "Toyota Corolla",
+    "price": "$14,500",
+    "image": "https://images.dealer.com/ddc/vehicles/2025/Toyota/Corolla/Sedan/trim_LE_c8e3ad/color/Ice%20Cap-040-251%2C250%2C248-640-en_US.jpg?impolicy=resize&w=640",
+    "year": 2020,
+    "color": "White"
+  },
+  {
+    "id": 2,
+    "name": "Toyota Corolla",
+    "price": "$15,500",
+    "image": "https://bucket.dealervenom.com/copeland-toyota/C430752_8X8_Front.webp?auto=compress%2Cformat&ixlib=php-3.3.1",
+    "year": 2021,
+    "color": "Purple"
+  },
+  {
+    "id": 3,
+    "name": "Toyota Corolla",
+    "price": "$9,000",
+    "image": "https://ymimg1.b8cdn.com/resized/car_model/275/pictures/13982170/listing_main_ext-3231303031.jpg",
+    "year": 2013,
+    "color": "Red"
+  },
+  {
+    "id": 4,
+    "name": "Toyota Corolla",
+    "price": "$9,000",
+    "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/8352/2013-Toyota-Corolla-front_8352_032_2400x1800_209_nologo.png",
+    "year": 2013,
+    "color": "Black"
+  },
+  {
+    "id": 5,
+    "name": "Toyota Corolla",
+    "price": "$9,000",
+    "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/8383/2013-Toyota-Corolla-front_8383_032_2400x1800_4T8.png",
+    "year": 2013,
+    "color": "Beige Metallic"
+  },
+  {
+    "id": 6,
+    "name": "Toyota Corolla",
+    "price": "$11,500",
+    "image": "https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/2648/",
+    "year": 2017,
+    "color": "Red"
+  },
+  {
+    "id": 7,
+    "name": "Toyota Corolla",
+    "price": "$11,500",
+    "image": "https://ymimg1.b8cdn.com/resized/car_model/2715/pictures/2926684/webp_mobile_listing_main_01.webp",
+    "year": 2017,
+    "color": "Black"
+  },
+  {
+    "id": 8,
+    "name": "Toyota Corolla",
+    "price": "$11,500",
+    "image": "https://ymimg1.b8cdn.com/resized/car_model/2715/logo/listing_main_2715.jpg",
+    "year": 2017,
+    "color": "White"
+  },
+  {
+    "id": 9,
+    "name": "Toyota Corolla",
+    "price": "$14,500",
+    "image": "https://images.dealer.com/ddc/vehicles/2025/Toyota/Corolla/Sedan/trim_LE_c8e3ad/color/Ice%20Cap-040-251%2C250%2C248-640-en_US.jpg?impolicy=resize&w=640",
+    "year": 2020,
+    "color": "White"
+  },
+  {
+    "id": 10,
+    "name": "Toyota Corolla",
+    "price": "$14,500",
+    "image": "https://images.dealer.com/ddc/vehicles/2025/Toyota/Corolla/Sedan/trim_LE_c8e3ad/color/Ice%20Cap-040-251%2C250%2C248-640-en_US.jpg?impolicy=resize&w=640",
+    "year": 2020,
+    "color": "White"
+  },
+  {
+    "id": 11,
+    "name": "Honda Civic",
+    "price": "$17,000",
+    "image": "https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2025/civic-sedan/non-VLP/10-Family/MY25_Civic_Family_Card_Jelly_Hybrid_2x.jpg?sc_lang=en",
+    "year": 2021,
+    "color": "Black"
+  },
+  {
+    "id": 12,
+    "name": "Honda Civic",
+    "price": "$17,000",
+    "image": "https://cars.usnews.com/static/images/Auto/izmo/i159614164/2021_honda_civic_hatchback_angularfront.jpg",
+    "year": 2021,
+    "color": "White"
+  },
+  {
+    "id": 13,
+    "name": "Honda Civic",
+    "price": "$17,000",
+    "image": "https://www.hondainfocenter.com/-/media/Honda-Sales-Tool-Media-Folder/Images/2021-Civic-Type-R/H_21CivicTypeR_SpecialEdition_PY.ashx?h=200&iar=0&w=620&hash=90371C1B12D76D6323466B95940E0B11",
+    "year": 2021,
+    "color": "Yellow"
+  },
+  {
+    "id": 14,
+    "name": "Honda Civic",
+    "price": "$20,000",
+    "image": "https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy,w_600/v1/svp/dep/23hondacivictyper/honda_23civictyper_angularfront_boostbluepearl",
+    "year": 2023,
+    "color": "Blue"
+  },
+  {
+    "id": 15,
+    "name": "Honda Civic",
+    "price": "$18,500",
+    "image": "https://ymimg1.b8cdn.com/resized/car_model/7132/pictures/13901150/webp_listing_main_ext-3231303031.webp",
+    "year": 2022,
+    "color": "Black"
+  },
+  {
+    "id": 16,
+    "name": "Ford Mustang",
+    "price": "$26,000",
+    "image": "https://imgd.aeplcdn.com/664x374/cw/ec/23766/Ford-Mustang-Exterior-126883.jpg?wm=0&q=80",
+    "year": 2019,
+    "color": "Red"
+  },
+  {
+    "id": 17,
+    "name": "BMW X5",
+    "price": "$52,000",
+    "image": "https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=26XO&client=byoc&paint=P0300&fabric=FKPSW&sa=S01CE,S01SF,S0255,S02TB,S0302,S0319,S0322,S03AT,S03MB,S0402,S0420,S0423,S0459,S0481,S0494,S04FL,S04KR,S04T8,S04UR,S0552,S05AC,S05AS,S05DM,S0676,S06AC,S06AK,S06C4,S06CP,S06NX,S06U2,S0775&angle=30",
+    "year": 2022,
+    "color": "White"
+  },
+  {
+    "id": 18,
+    "name": "Audi A6",
+    "price": "$48,000",
+    "image": "https://cdn.wheel-size.com/automobile/body/audi-a6-2014-2018-1683446803.5132124.jpg",
+    "year": 2023,
+    "color": "Silver"
+  },
+  {
+    "id": 19,
+    "name": "Chevrolet Camaro",
+    "price": "$30,000",
+    "image": "https://images.dealer.com/ddc/vehicles/2025/Audi/A6/Sedan/trim_45_Progressiv_114972/color/Ascari%20Blue%20Metallic-9W9W-21,36,58-640-en_CA.jpg",
+    "year": 2020,
+    "color": "Blue"
+  }
+]
