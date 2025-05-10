@@ -7,7 +7,7 @@ function Location() {
       <Header/>
 
 
-   <Footer/>
+   {/* <Footer/> */}
     </div>
   )
 }
