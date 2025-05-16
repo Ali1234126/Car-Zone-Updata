@@ -5,7 +5,7 @@
     header .navigation{
         display: flex;
         position: absolute;
-        top:-650px;
+        top:-950px;
          left:50%;
         flex-direction: column;
         background-color: #28475f;
@@ -102,6 +102,7 @@
             
         
         @media(max-width:768px){
+        
             .content{
                 flex-direction: column;
                 justify-content: center;
@@ -129,6 +130,7 @@
             .offers-container{
                 grid-template-columns: 1fr;
             }
+            
             
          }
  

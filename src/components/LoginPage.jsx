@@ -11,7 +11,7 @@ function LoginPage() {
   const navigate = useNavigate();
 
   // ✅ تحقق من صحة البريد
-  const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[a-zA-Z]{3}$/.test(email);
+  const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(email);
 
   // ✅ تحقق من كلمة المرور
   const isValidPassword = (password) => password.length >= 6;
@@ -36,15 +36,26 @@ function LoginPage() {
     }
 
     setLoading(true);
- try {
-      const response = await axios.post("https://6cd7-197-52-19-40.ngrok-free.app/api/login", formData);
-      localStorage.setItem("token", response.data.token);
-localStorage.setItem("isLoggedIn", "true");
 
-   
+    try {
+      const response = await axios.post("https://sunny-macaque-arguably.ngrok-free.app/api/login", formData);
+
+           console.log("Login response:", response);  // <-- أضيفي ده
+
+      localStorage.setItem("token", response.data.data.token);
+
+      // تخزين حالة الدخول والبريد الإلكتروني
+      localStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("email", formData.email); // تخزين البريد الإلكتروني
+
+      // التوجيه بعد النجاح
       navigate("/");
     } catch (err) {
-      setError(err.response?.data?.message || "فشل تسجيل الدخول. تأكد من البريد وكلمة المرور.");
+      if (!err.response) {
+        setError("حدث خطأ في الاتصال. حاول مرة أخرى.");
+      } else {
+        setError(err.response?.data?.message || "فشل تسجيل الدخول. تأكد من البريد وكلمة المرور.");
+      }
     } finally {
       setLoading(false);
     }

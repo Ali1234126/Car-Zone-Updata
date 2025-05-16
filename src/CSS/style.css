@@ -93,20 +93,9 @@ header {
     width:300px;
     padding: 20px;
 }
-.containerR{
-    border:1px solid #162938;
-    transform: translate(-10%,15%);
-    border-radius: 20px;
-    width:300px;
-    padding: 20px;
-}
-.ForgetPassword{
-    border:1px solid #162938;
-    transform: translate(-10%,80%);
-    border-radius: 20px;
-    width:300px;
-    padding: 20px;
-}
+
+
+
 .navigation .btnLogin,.btnReg,.logout {
     width: 130px;
     height: 50px;

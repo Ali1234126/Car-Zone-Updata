@@ -1,0 +1,25 @@
+/* ضيف التنسيق دا للـ body أو العنصر الأب الرئيسي */
+.reset-page,.registration-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* لمحاذاة أفقية */
+  align-items: center;      /* لمحاذاة عمودية */
+}
+
+/* تنسيق الصندوق */
+.reset-password-container {
+  border: 1px solid #162938;
+  border-radius: 20px;
+  width: 320px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+.containerR{
+    border: 1px solid #162938;
+  border-radius: 20px;
+  width: 320px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}

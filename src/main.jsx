@@ -8,6 +8,7 @@ import Events from './Pages/Events.jsx';
 import LoginPage from './components/LoginPage.jsx';
 import RegistrationPage from './components/RegistrationPage.jsx';
 import ForgetPasswordPage from './components/ForgetPasswordPage.jsx';
+import ResetPasswordPage from "./components/ResetPasswordPage.jsx"; // استيراد صفحة إعادة تعيين كلمة المرور
 import Home from './Pages/Home.jsx';
 import Cart from './Pages/Cart.jsx'; // استيراد صفحة السلة
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/ForgetPasswordPage",
     element: <ForgetPasswordPage />,
+  },
+  {
+    path: "/ResetPasswordPage",
+    element: <ResetPasswordPage />,
   },
   {
     path: "/cart",

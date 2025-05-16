@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function ForgetPasswordPage() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const validateEmail = (email) => {
-    return /^[^\s@]+@[^\s@]+\.[a-zA-Z]{3}$/.test(email);
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
   const handleChange = (e) => {
@@ -32,8 +34,10 @@ function ForgetPasswordPage() {
 
     setLoading(true);
     try {
-      await axios.post("https://api.example.com/forgot-password", { email });
+      await axios.post("https://sunny-macaque-arguably.ngrok-free.app/api/forgot-password", { email });
       setMessage("تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني.");
+      setEmail("");
+      navigate("/ResetPasswordPage"); // هنا التوجيه
     } catch (err) {
       setError("فشل إرسال البريد. تأكد من صحة البريد الإلكتروني.");
     } finally {
@@ -42,7 +46,7 @@ function ForgetPasswordPage() {
   };
 
   return (
-    <div>
+    <div className="forget-password-container">
       <form onSubmit={handleSubmit} className="ForgetPassword">
         <h3>Enter Your Email</h3>
         <div className="input-box">
@@ -51,12 +55,13 @@ function ForgetPasswordPage() {
           </span>
           <input
             type="email"
+            id="email"
             value={email}
             onChange={handleChange}
             placeholder=" "
             required
           />
-          <label>Email</label>
+          <label htmlFor="email">Email</label>
         </div>
         {error && <p className="error-message">{error}</p>}
         {message && <p className="success-message">{message}</p>}

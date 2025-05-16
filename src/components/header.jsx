@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import LoginButton from "./LoginButton";
+import axios from "axios";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,12 +28,39 @@ function Header() {
     };
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('token');
+ const handleLogout = async () => {
+  const token = localStorage.getItem("token");
+  const email = localStorage.getItem("email");
+
+  if (!token || !email) {
+    console.error("لا يوجد بيانات لتسجيل الخروج.");
+    return;
+  }
+
+  try {
+    const response = await axios.post(
+      "https://sunny-macaque-arguably.ngrok-free.app/api/logout",
+      { email }, // فقط البريد في البودي (لو كان مطلوب)
+      {
+        headers: {
+          Authorization: `Bearer ${token}`, // التوكن في الهيدر
+        },
+      }
+    );
+
+    console.log("تم الرد من الـ API:", response.data);
+
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("token");
+    localStorage.removeItem("email");
+
+    navigate("/");
     setIsLoggedIn(false);
-    navigate('/'); // إعادة التوجيه إلى الصفحة الرئيسية بعد تسجيل الخروج
-  };
+  } catch (err) {
+    console.error("فشل تسجيل الخروج:", err);
+  }
+};
+
 
   return (
     <header className={headerFixed ? "scrolled" : ""}>
@@ -55,9 +83,9 @@ function Header() {
 
         {isLoggedIn ? (
           <>
-           <button onClick={() => navigate('/cart')} className="cart-button">
-  <i className="fa-solid fa-cart-shopping"></i>
-</button>
+            <button onClick={() => navigate('/cart')} className="cart-button">
+              <i className="fa-solid fa-cart-shopping"></i>
+            </button>
 
             <button className="logout" onClick={handleLogout}>Logout</button>
           </>
